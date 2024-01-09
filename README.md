@@ -1,2 +1,2 @@
 # mobile_battery_saving_library
-The purpose of this proyect is to eventualy have a library of energy saving for mobile developement
+This project corresponds to the university memory project of the owner. Its purpose is to eventualy have an android library with patterns and tools create more sustainable mobile apps. 

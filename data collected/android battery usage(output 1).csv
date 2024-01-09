@@ -1,0 +1,31 @@
+Repository;Description
+tobykurien/BatteryFu;BatteryFu (pronounced Battery-Foo, like in Kung-Fu) is an Android app that extends battery life (and lowers data usage) by changing always-on mobile/wifi data to periodic sync (meaning it disables your mobile data and/or Wifi, then checks your accounts every X minutes).
+jackvt93/Open-Battery-Saver;Open Battery Saver is an open source android application. It helps android devices reduce battery usage, gets a long time for life's battery. This also my productivity in a Summer's contest when I study at university
+bhaavanmerchant/battery-historian-docker;A docker image to run battery-historian, a tool to monitor your Android battery usage.
+pylerSM/Energize;Android application to monitor the battery usage and the current charging level
+zordius/ssidLogger;SSID logger - an Android app for position tracking, target to logging without GPS/network access and low battery usage
+gmierz/powerusage-android;Battery and power usage measurement tools for android.
+amalChandran/androidutils; A simple app that monitors battery and network usage.
+chirathr/JioFiDash;JioFiDash - A simple dashboard to view battery status, data usage, data speeds and connected devices.
+haloinformatics/flutter_battery_optimization;A simple plugin to stop battery optimization usage in android only
+walles/batterylogger;Logs and plots Android device battery usage over the last month
+chimukaC7/BatteryUsage;android-development-building-battery-conscious-apps
+Zo2m4bie/BatteryUsageAndroid;
+abhinavsaurabh/SpotHot-Hotspot-Management-App;We developed an Android app which was capable of turn on/offhotspot automatically at a given time. Turn off automatically whenbelow certain battery level. Automatically start at the boot up. Turnoff automatically Hotspot if Data Usage reach a given amount
+eillish/Android-Battery-Saver;The system basically monitors your phone's battery usage and and constantly prompts normalize the usage of some apps
+andrecurvello/android-battery-munin;Android application and Munin plugin to graph battery usage
+shrine2000/Battery-Core;Battery Core will display battery health, battery usage, temperature information, and measures battery capacity (mAh).
+shivambijoria/android-batterysavingapp;Application for saving power consumption (Bachelor's Final Year Project): Build an android application which fine tunes hardware controls like cpu frequency and voltage for efficient power usage.
+ivanarandjelovic/AndroidBattery1;Test application for monitoring battery level on Android devices, with the idea to provide more precise predictions of the remaining battery usage (but in fact only test Android project for my educational purposes)
+Nativ-Thousandyear/BatteryOptimizationApp;Developed an Android application that analyzes battery usage patterns, identifies power-hungry apps/processes, and provides optimization suggestions to users.
+j-glow/battery-analyzer;Simple battery analyzer written with Qt. Inspired by battery usage charts from android phones.
+KonstantinosVasilopoulos/hermes_app;Android application for monitoring network usage and battery consumption.
+jackxl/Android_BackgroundTasks;An app to measure battery usage of background tasks in Android
+qdotdash/GameofBatteries;An android application that monitors instantaneous phone battery usage and predicts the remaining battery time with the usage rate and a score. Its fun!! (My First Android Application)
+rehmanh/Mac-Screen-Time;Android-style screen usage information for your Mac
+harshkn/datalogger;Logs various android phone parameters like battery level, apps running, number of cores, cpu usage etc.
+adetalhouet/Profiler;Linux Kernel based profiler used through Android environment. This project is aimed to monitor processes, network interfaces, connectivity, battery status, storage status, and global RAM usage for Android platform.
+danieledellacioppa/Jetpack-Dagger-Minimalistic-Launcher-for-Android-10;I'm creating an Android launcher in Kotlin focused on minimalism and low battery usage. It features Dagger 2 for dependency injection and Jetpack instead of XML for a responsive UI, tailored for devices with battery constraints
+xuelangcxy/android_auto_test;A way to monitor the state (such as cpu usage, memory usage, screen resolution, screen density, battery level, battery temperature, device info and so on) of the connected device, and based on a express framework, the state info can be displayed intuitive in a webpage.
+Roam-Campervans/ModuleMonitor;Android application that that uses protocol buffers to take in remote battery values and displays current and historical values for voltage, usage and charging history.
+SagarPateI/PowerSpy;A power consumption and activity monitoring app for Android that tracks battery-hungry tasks and activities, providing historical data for users to optimize their device's power usage.

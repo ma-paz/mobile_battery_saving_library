@@ -1,13 +1,43 @@
 from serpapi import GoogleSearch
-from dotenv import serpapiAPI
+from dotenv import load_dotenv
+import os
+import pandas as pd
 
+load_dotenv()
+
+key = os.getenv("SERPAPI_KEY")
 params = {
-  "api_key": serpapiAPI,
-  "engine": "google_scholar",
-  "q": "Coffee",
-  "hl": "en"
+    "api_key": key,
+    "engine": "google_scholar",
+    "q": "mobile battery",
+    "hl": "en",
+    "start":50,
+    "num": "20"
 }
 
 search = GoogleSearch(params)
 results = search.get_dict()
-print(results)
+
+# Extract relevant information from the search results
+search_results = results.get("organic_results", [])
+
+# Initialize lists to store data
+titles = []
+links = []
+descriptions = []
+
+# Extract data from search results
+for result in search_results:
+    title = result.get("title", "")
+    link = result.get("link", "")
+    description = result.get("snippet", "")
+
+    titles.append(title)
+    links.append(link)
+    descriptions.append(description)
+
+# Create a DataFrame from the lists
+df = pd.DataFrame({"Title": titles, "Link": links, "Description": descriptions})
+
+# Save the DataFrame to an Excel file
+df.to_excel("google_scholar_results.xlsx", index=False)

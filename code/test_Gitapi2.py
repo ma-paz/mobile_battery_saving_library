@@ -1,7 +1,10 @@
 import requests
 import csv
 from datetime import datetime
-from dotenv import gitAPI
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 def search_github_and_save(query, access_token, filename='github_repositories.csv', append=False):
     url = "https://api.github.com/search/repositories"
@@ -46,7 +49,7 @@ def search_github_and_save(query, access_token, filename='github_repositories.cs
 
 # Example usage
 
-token = gitAPI
+token = os.getenv("GIT_KEY")
 
 search_github_and_save("mobile battery", token, append=True)#1
 search_github_and_save("mobile energy consumption", token, append=True)#2

@@ -6,7 +6,7 @@ from scholarly import scholarly
 author_data = []
 
 # will paginate to the next page by default
-authors = scholarly.search_keyword("mobile")
+authors = scholarly.search_keyword("mobile battery")
 
 for author in authors:
     # Append each author's information to the list
@@ -17,4 +17,6 @@ for author in authors:
 df = pd.DataFrame(author_data)
 
 # Save the DataFrame to an Excel file
-df.to_excel("mobile battery_authors.xlsx", index=False)
+df.to_excel("output_schoolarly.xlsx", index=False)
+#"mobile energy consumption" as keyword doesnt work
+

@@ -6,11 +6,12 @@ from scholarly import scholarly
 author_data = []
 
 # will paginate to the next page by default
-authors = scholarly.search_keyword("mobile battery")
+authors = scholarly.search_keyword("mobile")
 
 for author in authors:
     # Append each author's information to the list
     author_data.append(author)
+    print(author)
 
 # Create a DataFrame from the list of author data
 df = pd.DataFrame(author_data)

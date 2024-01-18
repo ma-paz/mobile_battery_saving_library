@@ -1,7 +1,8 @@
 from serpapi import GoogleSearch
+from dotenv import serpapiAPI
 
 params = {
-  "api_key": "3dfc42cfc42e2f182d041fe334210a81a507338d4fceecea53a064266f461d51",
+  "api_key": serpapiAPI,
   "engine": "google_scholar",
   "q": "Coffee",
   "hl": "en"

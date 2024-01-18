@@ -9,10 +9,11 @@ key = os.getenv("SERPAPI_KEY")
 params = {
     "api_key": key,
     "engine": "google_scholar",
-    "q": "mobile battery",
+    "q": "mobile energy saving patterns",
     "hl": "en",
-    "start":50,
-    "num": "20"
+    "start":0,
+    "num": "20",
+    "as_ylo": "2015"
 }
 
 search = GoogleSearch(params)

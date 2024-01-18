@@ -1,5 +1,6 @@
 import requests
 import csv
+from dotenv import gitAPI
 
 def search_github_repositories(keyword, access_token=None):
     base_url = "https://api.github.com/search/repositories"
@@ -26,7 +27,7 @@ def search_github_repositories(keyword, access_token=None):
         print(f"Error: {response.status_code}, {response.text}")
 
 # Example usage
-token = "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"
+token = gitAPI
 search_github_repositories("mobile battery", token)#1
 search_github_repositories("mobile energy consumption", token)#2
 search_github_repositories("android battery", token)#3

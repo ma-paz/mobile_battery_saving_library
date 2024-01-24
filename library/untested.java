@@ -45,3 +45,53 @@ public class ScreenManagerActivity extends Activity {
         return super.onTouchEvent(event);
     }
 }
+public class RetryWithBackoffExample {
+
+    // Define a functional interface for the method to be retried
+    @FunctionalInterface
+    interface RetryableMethod {
+        void run() throws Exception;
+    }
+
+    // Method A: Retry method B with backoff
+    public static void retryWithBackoff(RetryableMethod methodB) {
+        int maxAttempts = 3;
+        long initialDelayMillis = 1000; // Initial delay in milliseconds
+
+        for (int attempt = 1; attempt <= maxAttempts; attempt++) {
+            try {
+                methodB.run(); // Execute method B
+                return; // If successful, exit the loop
+            } catch (Exception e) {
+                // Log or handle the exception (you can customize this part)
+                System.err.println("Attempt " + attempt + " failed: " + e.getMessage());
+
+                if (attempt < maxAttempts) {
+                    // If not the last attempt, apply backoff delay
+                    long delayMillis = initialDelayMillis * attempt;
+                    try {
+                        Thread.sleep(delayMillis);
+                    } catch (InterruptedException interruptedException) {
+                        Thread.currentThread().interrupt();
+                    }
+                }
+            }
+        }
+
+        // Return an error if maxAttempts reached
+        System.err.println("All attempts failed. Returning an error.");
+    }
+
+    // Method B: An example method that might throw an exception
+    public static void methodB() throws Exception {
+        // Replace this with the actual implementation of method B
+        // For example, this could be an API call, database operation, etc.
+        // For simplicity, this example just throws an exception.
+        throw new Exception("Method B failed!");
+    }
+
+    public static void main(String[] args) {
+        // Example usage: Retry methodB with backoff
+        retryWithBackoff(() -> methodB());
+    }
+}

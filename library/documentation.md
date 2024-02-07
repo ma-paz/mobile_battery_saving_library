@@ -1,9 +1,9 @@
-No screen interaction
+# No screen interaction 
 
-Context
+### Context
 There are apps that require a continuous usage of the screen. However, there are use cases in which the screen can be replaced by less power intensive alternatives.
 
-Solution
+### Solution
 Allow users to interact with the app using alternative interfaces (e.g., audio).
 
 Example

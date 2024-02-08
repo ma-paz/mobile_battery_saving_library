@@ -11,7 +11,7 @@ params = {
     "engine": "google_scholar",
     "q": "mobile energy saving patterns",
     "hl": "en",
-    "start":230,
+    "start":370,
     "num": "20",
     "as_ylo": "2015"
 }
@@ -41,4 +41,4 @@ for result in search_results:
 df = pd.DataFrame({"Title": titles, "Link": links, "Description": descriptions})
 
 # Save the DataFrame to an Excel file
-df.to_excel("serpapi_23.xlsx", index=False)
+df.to_excel("serpapi_37.xlsx", index=False)
